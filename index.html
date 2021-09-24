@@ -8,6 +8,14 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="index.js" defer></script>
   </head>
+
+  <style>
+    .disabled {
+      color: lightgray;
+      transition: color 2s ease;
+    }
+  </style>
+
   <body>
     <div id="app">
       <!-- VUE CODE RUNS IN THIS DIV WITH THIS ID -->
@@ -17,7 +25,7 @@
       <input type="text" v-model="name" />
       <div>
         <button v-on:click="showInfo = !showInfo">Toggle</button>
-        <p v-if="showInfo">Extra Information</p>
+        <p v-bind:class="{ disabled: showInfo }">Extra Information</p>
       </div>
     </div>
   </body>
