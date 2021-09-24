@@ -5,7 +5,8 @@ var app = new Vue({
   data: function() {
     return {
       message: "Hello from Vue JS!",
-      name: "Cheddar"
+      name: "Cheddar",
+      showInfo: false
     };
   },
   methods: {
