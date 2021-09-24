@@ -12,8 +12,8 @@
       <div>1st number: <input type="text" v-model="number1" /></div>
       <div>2nd number: <input type="text" v-model="number2" /></div>
       <div>3rd number: <input type="text" v-model="number3" /></div>
-      <div><button v-on:click="computeSum()">Compute sum</button></div>
-      <p>The sum is: {{ sum }}</p>
+      <p>The sum is: {{ computeSum() }}</p>
+      <p>The difference is: {{ computeDifference() }}</p>
     </div>
   </body>
 </html>
